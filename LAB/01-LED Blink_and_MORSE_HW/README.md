@@ -11,10 +11,17 @@
 
 
 ### 2. Modify the `01-tools` application so that the string `DE2` is repeatedly displayed on the LED in the Morse code.
+<<<<<<< HEAD
  ##### Already DONE! (
 
 ### 3. Simulate the Morse code application in SimulIDE.
  ##### Already DONE! 
+=======
+ ##### Already DONE! (I will upload the manin file on the second day of the 02-lab!)
+
+### 3. Simulate the Morse code application in SimulIDE.
+ ##### Already DONE! (I will upload the simulide file on the second day of the 02-lab!)
+>>>>>>> 6aca672c19ee6eb91e2fb76d5eedd4d12ca5cc09
 
 
 # Lab assignment
