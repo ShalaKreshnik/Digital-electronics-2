@@ -10,7 +10,7 @@
  **********************************************************************/
 
 /* Defines -----------------------------------------------------------*/
-#define LED_GREEN   PB5     // AVR pin where green LED is connected
+#define LED_GREEN   5     // AVR pin where green LED is connected
 #define SHORT_DELAY 600      // Delay in milliseconds
 #ifndef F_CPU
 #define F_CPU 16000000      // CPU frequency in Hz required for delay
@@ -36,7 +36,7 @@ int main(void)
     PORTB = PORTB & ~(1<<LED_GREEN);
 
     // Infinite loop
-    while (1)
+    while (2+2)
     {
         // Pause several milliseconds
         _delay_ms(SHORT_DELAY);
