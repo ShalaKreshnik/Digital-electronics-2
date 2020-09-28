@@ -21,7 +21,7 @@
 
 ### 3. Simulate the Morse code application in SimulIDE.
  ##### Already DONE! (I will upload the simulide file on the second day of the 02-lab!)
->>>>>>> 6aca672c19ee6eb91e2fb76d5eedd4d12ca5cc09
+
 
 
 # Lab assignment
@@ -32,4 +32,4 @@
 ##### * Answers to questions: What is the meaning of `|`, `&`, `^`, `~`, `<<` binary operators? Write a truth table and explain the use of operators with examples.
 ### 3. Morse code application. Submit:
 #####    * C code (`main.c`).
-###### * TO DO
+###### Already DONE!
