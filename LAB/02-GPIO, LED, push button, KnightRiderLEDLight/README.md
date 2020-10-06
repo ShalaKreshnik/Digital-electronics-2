@@ -43,29 +43,29 @@ Extra. Program the [PWM generator](https://www.analogictips.com/pulse-width-modu
 | :-: | :-: | :-- |
 | A | x | Microcontroller ATmega328P does not contain port A |
 | B | 0 | Yes (Arduino pin 8) |
-|   | 1 |  |
-|   | 2 |  |
-|   | 3 |  |
-|   | 4 |  |
-|   | 5 |  |
-|   | 6 |  |
-|   | 7 |  |
+| B | 1 | Yes (Arduino pin ~9) |
+| B | 2 | Yes (Arduino pin ~10) |
+| B | 3 | Yes (Arduino pin ~11) |
+| B | 4 | Yes (Arduino pin 12) |
+| B | 5 | Yes (Arduino pin 13) |
+| B | 6 | No, [From DATASHEET of ATmega328P] |
+| B | 7 | No, [From DATASHEET of ATmega328P] |
 | C | 0 | Yes (Arduino pin A0) |
-|   | 1 |  |
-|   | 2 |  |
-|   | 3 |  |
-|   | 4 |  |
-|   | 5 |  |
-|   | 6 |  |
-|   | 7 |  |
+| C | 1 | Yes (Arduino pin A1) |
+| C | 2 | Yes (Arduino pin A2) |
+| C | 3 | Yes (Arduino pin A3) |
+| C | 4 | Yes (Arduino pin A4) |
+| C | 5 | Yes (Arduino pin A5) |
+| C | 6 | No [From DATASHEET of ATmega328P] |
+| C | 7 | X, [From DATASHEET of ATmega328P] |
 | D | 0 | Yes (Arduino pin RX<-0) |
-|   | 1 |  |
-|   | 2 |  |
-|   | 3 |  |
-|   | 4 |  |
-|   | 5 |  |
-|   | 6 |  |
-|   | 7 |  |
+| D | 1 | Yes (Arduino pin TX->1) |
+| D | 2 | Yes (Arduino pin 2) |
+| D | 3 | Yes (Arduino pin ~3) |
+| D | 4 | Yes (Arduino pin 4) |
+| D | 5 | Yes (Arduino pin ~5) |
+| D | 6 | Yes (Arduino pin ~6) |
+| D  | 7 | Yes (Arduino pin 7) |
     
 ###  * code with two LEDs and a push button,
 
