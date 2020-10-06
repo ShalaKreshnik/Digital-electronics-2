@@ -22,19 +22,19 @@ Extra. Program the [PWM generator](https://www.analogictips.com/pulse-width-modu
 | **DDRB** | **Description** |
 | :-: | :-- |
 | 0 | Input pin |
-| 1 | |
+| 1 | Output pin |
 
 | **PORTB** | **Description** |
 | :-: | :-- |
 | 0 | Output low value |
-| 1 | |
+| 1 | Output high value |
 
 | **DDRB** | **PORTB** | **Direction** | **Internal pull-up resistor** | **Description** |
 | :-: | :-: | :-: | :-: | :-- |
 | 0 | 0 | input | no | Tri-state, high-impedance |
-| 0 | 1 | | | |
-| 1 | 0 | | | |
-| 1 | 1 | | | |    
+| 0 | 1 | input | Yes | Tri-state (Hi-Z) |
+| 1 | 0 | Output | No | Output Low (Sink) |
+| 1 | 1 | Output | No | Output High (Source) |    
  
     
 ### * Table with input/output pins available on ATmega328P,
