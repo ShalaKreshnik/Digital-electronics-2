@@ -25,8 +25,8 @@ Here is an example of how to find the size of the void pointer in the C language
 int main() {
 	void *ptr;
 
-	printf("Pointer size value is: %d", sizeof(ptr));
-	return 0;
+printf("Pointer size value is: %d", sizeof(ptr));
+return 0;
 }
 
 Output:
