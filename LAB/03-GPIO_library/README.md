@@ -21,6 +21,8 @@ Fill in the following table and enter the number of bits and numeric range for t
 Void pointer size varies system to system. If the system is 16-bit, size of void pointer is 2 bytes. If the system is 32-bit, size of void pointer is 4 bytes. If the system is 64-bit, size of void pointer is 8 bytes.
 
 Here is an example of how to find the size of the void pointer in the C language:
+
+
 #include <stdio.h>
 int main() {
 	void *ptr;
