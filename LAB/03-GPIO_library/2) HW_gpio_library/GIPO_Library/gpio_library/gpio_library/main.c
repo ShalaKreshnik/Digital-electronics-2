@@ -46,7 +46,7 @@ int main(void)
     // WRITE YOUR CODE HERE
 
  GPIO_config_output(&DDRC, LED_RED);
- GPIO_write_high(&PORTC, LED_RED);  // LED off, because active-high
+ GPIO_write_low(&PORTC, LED_RED);  // LED off, because active-high
 
     /* push button */
     // WRITE YOUR CODE HERE
