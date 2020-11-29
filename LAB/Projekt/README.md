@@ -26,3 +26,11 @@ In order for this application of the door lock system to work, we need:
 * Audio output
 
 ![SimulIDE](Images/Completed_circuit.png)
+
+
+## Software
+
+* Atmel Studio 7
+* SimulIDE, real time electronic circuit simulator.
+
+![Flowchar](Images/Flowchar.png)
