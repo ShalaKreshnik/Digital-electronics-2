@@ -46,7 +46,7 @@ In order for this application of the door lock system to work, we need:
 * timer.h 
 * delay.h 
 * uart.h 
-* lcd.h etc.
+* lcd.h and etc.
 
 
 
