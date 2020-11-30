@@ -26,6 +26,8 @@ In order for this application of the door lock system to work, we need:
 * Resistor 1.2kOhm
 * Audio output
 
+### Circuit Diagram
+
 ![SimulIDE](Images/Completed_circuit.png)
 
 
