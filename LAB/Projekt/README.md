@@ -38,3 +38,10 @@ In order for this application of the door lock system to work, we need:
 ## Concept Presentation
 
 ![Flowchar](Images/Flowchar.png)
+
+
+### Libraries:
+* timer.h (previous labs)
+* Can also use delay.h 
+* uart.h (previous labs) 
+* lcd.h (previous labs)
