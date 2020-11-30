@@ -26,7 +26,7 @@ In order for this application of the door lock system to work, we need:
 * Resistor 1.2kOhm
 * Audio output
 
-### Circuit Diagram
+#### Circuit Diagram
 
 ![SimulIDE](Images/Completed_circuit.png)
 
@@ -42,8 +42,23 @@ In order for this application of the door lock system to work, we need:
 ![Flowchar](Images/Flowchar.png)
 
 
-### Libraries:
+#### Libraries:
 * timer.h (previous labs)
 * Can also use delay.h 
 * uart.h (previous labs) 
 * lcd.h (previous labs)
+
+
+## Code description and simulations
+
+*Write your text here*
+
+
+## Video/Animation
+
+*Write your text here*
+
+
+## References
+
+*Write your text here*
