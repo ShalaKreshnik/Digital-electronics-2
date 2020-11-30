@@ -1,4 +1,5 @@
 ### Participants in the project: [Kreshnik Shala](https://github.com/ShalaKreshnik) and [Nadir Osman Al-Wattar](https://github.com/Nadir011995)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Project: Smart Door Locking System
 ### Project objectives
 
