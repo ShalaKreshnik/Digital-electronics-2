@@ -64,7 +64,7 @@ Once the concept is approved we will start with programming!!!
 ## References
 
 
-1.  [What is a flowchart?  ](https://www.breezetree.com/articles/what-is-a-flow-chart) 
-2.  [What is a Relay? How does a Relay works?  ](https://www.youtube.com/watch?v=1_YfuH_AcxQ)
-3.  [How to connect the relay and transistor with microcontroller  ](http://electronicsdrive.blogspot.com/2015/03/how-to-calculate-base-resistance.html)
-4.  [ATmega32 + LCD + Keypad Interface  ](https://extremeelectronics.co.in/avr-tutorials/4x3-matrix-keypad-interface-avr-tutorial/)
+1.  [What is a flowchart?](https://www.breezetree.com/articles/what-is-a-flow-chart) 
+2.  [What is a Relay? How does a Relay works?](https://www.youtube.com/watch?v=1_YfuH_AcxQ)
+3.  [How to connect the relay and transistor with microcontroller](http://electronicsdrive.blogspot.com/2015/03/how-to-calculate-base-resistance.html)
+4.  [ATmega32 + LCD + Keypad Interface](https://extremeelectronics.co.in/avr-tutorials/4x3-matrix-keypad-interface-avr-tutorial/)
