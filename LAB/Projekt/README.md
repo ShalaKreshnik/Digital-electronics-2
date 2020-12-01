@@ -44,8 +44,9 @@ In order for this application of the door lock system to work, we need:
 
 #### From the past laboratories we can use these Libraries, for example:
 * timer.h 
-* delay.h 
 * uart.h 
+* lcd_definitons.h
+* Keypad.h
 * lcd.h and etc.
 
 
