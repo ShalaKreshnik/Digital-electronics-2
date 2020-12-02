@@ -65,11 +65,6 @@ ISR:
 * Timer overflow
 * ADC 
 
-* TIMER0_OVF_vect
-* TIMER1_OVF_vect
-* TIMER3_OVF_vect
-
-
 
 ## Code description and simulations
 
