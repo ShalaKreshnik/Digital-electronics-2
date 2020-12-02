@@ -24,7 +24,7 @@ In order for this application of the door lock system to work, we need:
 * Door unlock relay
 * Bipolar transistor
 * Resistor 1.2kOhm
-* Audio output
+* Audio output (Speaker)
 * Display (Hd44780)
 * 12V Supply
 
@@ -53,11 +53,17 @@ In order for this application of the door lock system to work, we need:
 * lcd.h
 * lcd_definitons.h
 * lcd.c
+
 #### Own Library for keypad scanning
+We will program keypad’s library and LCD display....
 * Keypad.h
 * Keypad.c
 
 #### We can use these interrupt handlers:
+Timers are already programmed. 
+ISR:
+* Timer overflow
+* ADC 
 
 * TIMER0_OVF_vect
 * TIMER1_OVF_vect
