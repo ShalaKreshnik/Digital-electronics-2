@@ -60,8 +60,8 @@ We will program keypad’s library and LCD display....
 * Keypad.c
 
 #### We can use these interrupt handlers:
-Timers are already programmed. 
-ISR:
+Timers are already programmed
+
 * Timer overflow
 * ADC 
 
