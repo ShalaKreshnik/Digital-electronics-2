@@ -25,6 +25,8 @@ In order for this application of the door lock system to work, we need:
 * Bipolar transistor
 * Resistor 1.2kOhm
 * Audio output
+* Display (Hd44780)
+* 12V Supply
 
 #### Circuit Diagram
 
