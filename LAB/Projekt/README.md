@@ -63,7 +63,7 @@ We will program keypad’s library and LCD display....
 Timers are already programmed
 
 * Timer overflow
-* ADC 
+
 
 
 ## Code description and simulations
