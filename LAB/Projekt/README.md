@@ -22,13 +22,17 @@ In order for this application of the door lock system to work, we need:
 * ATmega328P 8-bit microcontroller.
 * 4x3 keyboard
 * Door unlock relay
-* Bipolar transistor
+* Bipolar transistor_1
+* Bipolar transistor_2
 * Resistor 1.2kOhm
 * Audio output (Speaker)
 * Display (Hd44780)
-* 12V Supply
+* 12V Supply_1
+* 3V Supply_2
 
 #### Circuit Diagram
+[Concept presentation circuit](Completed_circuit.png)
+ 
 
 ![SimulIDE](Images/Completed_circuit.png)
 
