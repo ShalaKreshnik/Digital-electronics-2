@@ -1,4 +1,5 @@
-## Participants in the project: Kreshnik Shala and Nadir Osman Al-Wattar
+### Participants in the project: [Kreshnik Shala](https://github.com/ShalaKreshnik) and [Nadir Osman Al-Wattar](https://github.com/Nadir011995)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Project: Smart Door Locking System
 ### Project objectives
 
@@ -14,4 +15,75 @@ The aim of this project therefore is to design and construct a keypad/password b
 In order for this application of the door lock system to work, we need: 
 4x3 keyboard; display; door unlock relay; own library for keypad scanning; time limit for entering the correct 4-digit code; several correct codes to distinguish more people; signaling of entering the wrong code; time delay for re-locking the lock approx. 2 to 3 seconds; sending interesting information about the status of the application to the UART.
 
-![SimulIDE](Images/Flowchar.png)
+
+
+## Hardware description
+
+* ATmega328P 8-bit microcontroller.
+* 4x3 keyboard
+* Door unlock relay
+* Bipolar transistor_1
+* Bipolar transistor_2
+* Resistor 1.2kOhm
+* Audio output (Speaker)
+* Display (Hd44780)
+* 12V Supply_1
+* 3V Supply_2
+
+#### Circuit Diagram
+Concept presentation [circuit_1](Images/Completed_circuit.png)
+ 
+
+#### Updated Circuit![SimulIDE](Images/Updated_Circuit.png)
+
+
+## Software
+
+* Atmel Studio 7
+* SimulIDE, real time electronic circuit simulator.
+
+
+## Concept Presentation
+#### Flowchart Diagram
+![Flowchar](Images/Flowchar.png)
+
+
+#### From the past laboratories we can use these Libraries, for example:
+* gpio.h
+* gpio.c
+* timer.h 
+* uart.h 
+* uart.c
+* lcd.h
+* lcd_definitons.h
+* lcd.c
+
+#### Own Library for keypad scanning
+We will program keypad’s library and LCD display....
+* Keypad.h
+* Keypad.c
+
+#### We can use these interrupt handlers:
+Timers are already programmed
+
+* Timer overflow
+
+
+
+## Code description and simulations
+
+Once the concept is approved we will start with programming!!!
+
+
+## Video/Animation
+
+*Write your text here*
+
+
+## References
+
+
+1.  [What is a flowchart?](https://www.breezetree.com/articles/what-is-a-flow-chart) 
+2.  [What is a Relay? How does a Relay works?](https://www.youtube.com/watch?v=1_YfuH_AcxQ)
+3.  [How to connect the relay and transistor with microcontroller](http://electronicsdrive.blogspot.com/2015/03/how-to-calculate-base-resistance.html)
+4.  [ATmega32 + LCD + Keypad Interface](https://extremeelectronics.co.in/avr-tutorials/4x3-matrix-keypad-interface-avr-tutorial/)
