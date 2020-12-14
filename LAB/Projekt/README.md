@@ -95,7 +95,7 @@ ________________________________________________________________________________
 
 ## Video/Animation
 
-![Running text](Images/Welcome_Mr.Thomas .gif)
+![Running text](Images/Welcome_Mr.Thomas.gif)
 
 
 *Write your text here*
