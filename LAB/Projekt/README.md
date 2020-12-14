@@ -31,7 +31,7 @@ In order for this application of the door lock system to work, we need:
 * 3V Supply_2
 
 #### Circuit Diagram
-## * Concept presentation [fircuit_1](Images/Completed_circuit.png)
+* Concept presentation [Circuit_1](Images/Completed_circuit.png)
  
 
 #### Updated Circuit![SimulIDE](Images/Updated_Circuit.png)
@@ -45,7 +45,7 @@ In order for this application of the door lock system to work, we need:
 
 ## Concept Presentation
 #### Flowchart Diagram
-## * Concept presentation [Flowchar_1](Images/Flowchar.png)
+* Concept presentation [Flowchar_1](Images/Flowchar.png)
 
 ![Flowchar](Images/Updated_Flowchar.png)
 
