@@ -34,7 +34,7 @@ In order for this application of the door lock system to work, we need:
 * Concept presentation [Circuit_1](Images/Completed_circuit.png)
  
 
-#### Updated Circuit![SimulIDE](Images/Updated_Circuit.png)
+#### Updated Circuit: ![SimulIDE](Images/Updated_Circuit.png)
 
 
 ## Software
@@ -48,7 +48,7 @@ In order for this application of the door lock system to work, we need:
 
 * Concept presentation [Flowchar_1](Images/Flowchar.png)
 
-#### Updated Flowchar ![Flowchar](Images/Updated_Flowchar.png)
+#### Updated Flowchar: ![Flowchar](Images/Updated_Flowchar.png)
 
 
 #### From the past laboratories we can use these Libraries, for example:
