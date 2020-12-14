@@ -71,9 +71,12 @@ In order for this application of the door lock system to work, we need:
 
 
 #### Own librarys for keypad scanning:
-* Keypad.h
-* Keypad.c
-* >>> main.c <<<
+
+* [Keypad.h](Previous_Labs_Libraries/Keypad.h)
+
+* [Keypad.c](Previous_Labs_Libraries/Keypad.c)
+
+* [main.c](Previous_Labs_Libraries/main.c)
 
 
 ## Code description and simulations
