@@ -15,7 +15,7 @@ The aim of this project therefore is to design and construct a keypad/password b
 In order for this application of the door lock system to work, we need: 
 4x3 keyboard; display; door unlock relay; own library for keypad scanning; time limit for entering the correct 4-digit code; several correct codes to distinguish more people; signaling of entering the wrong code; time delay for re-locking the lock approx. 2 to 3 seconds; sending interesting information about the status of the application to the UART.
 
-
+_________________________________________________________________________________________________________________________________________________________________________________
 
 ## Hardware description
 
