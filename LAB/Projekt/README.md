@@ -53,7 +53,7 @@ In order for this application of the door lock system to work, we need:
 
 #### Libraries from previous labs:
 * gpio.c 
-(Previous_Labs_Libraries/gpio.c)
+* [](Previous_Labs_Libraries/gpio.c)
 * gpio.h
 * lcd.c
 * lcd.h
