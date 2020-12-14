@@ -45,9 +45,10 @@ In order for this application of the door lock system to work, we need:
 
 ## Concept Presentation
 #### Flowchart Diagram
+
 * Concept presentation [Flowchar_1](Images/Flowchar.png)
 
-![Flowchar](Images/Updated_Flowchar.png)
+#### Updated Flowchar ![Flowchar](Images/Updated_Flowchar.png)
 
 
 #### From the past laboratories we can use these Libraries, for example:
