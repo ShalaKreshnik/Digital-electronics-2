@@ -52,25 +52,21 @@ In order for this application of the door lock system to work, we need:
 
 
 #### From the past laboratories we can use these Libraries, for example:
-* gpio.h
 * gpio.c
-* timer.h 
-* uart.h 
-* uart.c
+* gpio.h
+* lcd.c
 * lcd.h
 * lcd_definitons.h
-* lcd.c
+* timer.h 
+* uart.c
+* uart.h 
+
+
 
 #### Own Library for keypad scanning
-We will program keypad’s library and LCD display....
 * Keypad.h
 * Keypad.c
-
-#### We can use these interrupt handlers:
-Timers are already programmed
-
-* Timer overflow
-
+* >>> main.c <<<
 
 
 ## Code description and simulations
