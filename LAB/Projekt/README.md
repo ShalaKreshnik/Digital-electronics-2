@@ -51,8 +51,9 @@ In order for this application of the door lock system to work, we need:
 #### Updated Flowchar: ![Flowchar](Images/Updated_Flowchar.png)
 
 
-#### From the past laboratories we can use these Libraries, for example:
-* gpio.c
+#### Libraries from previous labs:
+* gpio.c 
+[template code](Previous_Labs_Libraries/gpio.c)
 * gpio.h
 * lcd.c
 * lcd.h
@@ -63,7 +64,7 @@ In order for this application of the door lock system to work, we need:
 
 
 
-#### Own Library for keypad scanning
+#### Own librarys for keypad scanning:
 * Keypad.h
 * Keypad.c
 * >>> main.c <<<
@@ -71,7 +72,7 @@ In order for this application of the door lock system to work, we need:
 
 ## Code description and simulations
 
-Once the concept is approved we will start with programming!!!
+
 
 
 ## Video/Animation
