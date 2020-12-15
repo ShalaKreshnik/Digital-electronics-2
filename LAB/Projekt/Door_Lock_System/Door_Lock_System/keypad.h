@@ -2,6 +2,8 @@
 #ifndef KEYPAD_H_
 #define KEYPAD_H_
 
+// Declarations of the variables
+
 int correct;
 int correct_1;
 int correct_2;
@@ -17,10 +19,10 @@ int countdown_2;
 int countdown_flag;
 int password_1[4];
 int password_2[4];
-int column;
-int cols;
-volatile uint8_t i;
-int char_flag;
+
+
+
+
 
 void keypad();
 

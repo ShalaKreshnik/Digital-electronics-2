@@ -102,6 +102,7 @@ void reset()
 	countdown = 9;
 	countdown_1 = 9;
 	time_check = 0;
+    countdown_flag = 0; // Countdown completed.
 	lcd_gotoxy(0,0);
 	lcd_puts("                    ");
 	lcd_gotoxy(0,1);
@@ -149,7 +150,7 @@ void entry_accepted()
 	}
 	else if(correct_1 == 1)
 	{
-		lcd_puts("Mr. Al-Watta");
+		lcd_puts("Mr. Al-Wattar");
 	}
 	else if(correct_2 == 1)
 	{
@@ -157,6 +158,6 @@ void entry_accepted()
 	}
 	
 	GPIO_write_high(&PORTC,5);
-	countdown_flag = 1;
+	countdown_flag = 1; 
 	
 }

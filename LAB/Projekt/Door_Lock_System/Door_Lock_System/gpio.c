@@ -57,11 +57,11 @@ uint8_t GPIO_read(volatile uint8_t *reg_name, uint8_t pin_num)
 {
 	if (bit_is_set(*reg_name,pin_num))
 	{
-		return 1;// if the button is not pressed it returns the value 1
+		return 1;
 	}
 	
 	else
 	{
-		return 0; // if the button is pressed it returns the value 0
+		return 0;
 	}
 }

@@ -1,3 +1,10 @@
+/*
+ * Door_lock_system.c
+ *
+ * Created: 13.12.2020 20:28:51
+ * Author : Nadir Osman Al-Wattar & Kreshnik Shala
+ */ 
+
 /* Includes ----------------------------------------------------------*/
 
 #include <avr/io.h>         // AVR device-specific IO definitions
@@ -13,15 +20,9 @@
 #ifndef F_CPU
 #define F_CPU  16000000
 #endif
-/* Function definitions ----------------------------------------------*/
-/**
- * Main function where the program execution begins. Use Timer/Counter1
- * and start ADC conversion four times per second. Send value to LCD
- * and UART.
- */
 
 /*----------------------------------Variables used in program-------------------------------------------*/
-int char_flag =0; // Char was pressed
+
 int correct = 0; // Correct Password or not
 int correct_1 = 0;
 int correct_2 = 0;
@@ -29,10 +30,9 @@ int count_1 = 0;
 int count = 0; // Count for total number of keys for password
 char pass[4]; // Entered values will be stored here
 int password[4] = {2,3,4,5}; // Password for Mr. Thomas
-int password_1[4] = {4,3,4,5}; // Password for Mr. Al-Watta
+int password_1[4] = {4,3,4,5}; // Password for Mr. Al-Wattar
 int password_2[4] = {1,2,3,4}; // Password for Mr. Shala
 int position = 5; // Initial position on display
-volatile uint8_t i = 0;
 int time_check = 0;
 int countdown = 9; // Countdown for closing door
 int countdown_1 = 9; // Countdown for entering the password
@@ -58,17 +58,12 @@ int main(void)
 	GPIO_config_output(&DDRD, 1);
 	GPIO_config_output(&DDRD, 2);	
 
-	GPIO_config_input_nopull(&DDRB, 2);
-	GPIO_config_input_nopull(&DDRB, 3);
-	GPIO_config_input_nopull(&DDRB, 4);
-	GPIO_config_input_nopull(&DDRB, 5);
-	
+
 
 	// Timer 0 interrupt enabling
 	TIM0_overflow_4ms();
 	TIM0_overflow_interrupt_enable();
 	
-    // Configure 16-bit Timer/Counter1 to start ADC conversion
     // Enable interrupt and set the overflow prescaler to 1 s
     
 	TIM1_overflow_1s();
@@ -93,10 +88,8 @@ int main(void)
 
 /* Interrupt service routines ----------------------------------------*/
 /**
- * ISR starts when Timer/Counter1 overflows. Use single conversion mode
- * and start conversion four times per second.
+ * ISR starts when Timer/Counter1 overflows
  */
-
 
 ISR (TIMER0_OVF_vect)
 {
@@ -129,7 +122,7 @@ ISR (TIMER0_OVF_vect)
 					uart_puts("Key pressed was: ");
 					uart_putc(pass[count]);
 					uart_puts("\r\n");
-					char_flag =0; // Again resetting the char_flag
+				
 				}
 				count_1 = 0; // Resetting the value for the next key to be entered
 				position++; // Next position for key
@@ -157,7 +150,7 @@ ISR (TIMER0_OVF_vect)
 				entry_denied(); // Function defined in keypad.h
 			}
 			
-			else if (correct == 1 || correct_1 == 1 || correct_2 == 1) // The password entered was correct by any of the 3 persons.
+			else if (correct == 1|| correct_1 == 1 || correct_2 == 1) // The password entered was correct by any of the 3 persons.
 			{
 				// Door will be opened for 9 seconds
 				entry_accepted();
@@ -191,7 +184,7 @@ ISR(TIMER1_OVF_vect) // 1 second time delay
 	}
 	if (countdown == -1 && countdown_2 == 3) // Countdown has been completed 
 	{
-		uart_puts("Door is now closed"); // displaying at uart
+		uart_puts("Door is now closed"); // displaying at UART
 		uart_puts("\r\n");
 		uart_puts("Enter password again");
 		uart_puts("\r\n");
@@ -227,7 +220,6 @@ ISR(TIMER1_OVF_vect) // 1 second time delay
 		if (countdown_2 == -1)
 		{
 			countdown_2 = 3;
-			countdown_flag = 0; // Countdown completed.
 			reset(); // Reset the display
 			return;
 		}
