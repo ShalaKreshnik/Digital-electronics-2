@@ -99,7 +99,7 @@ ________________________________________________________________________________
 
 ![Running text](Images/Incorrect.gif)
 
-![Running text](with_uart.gif)
+![Running text](Images/with_uart.gif)
 
 
 *Write your text here*
