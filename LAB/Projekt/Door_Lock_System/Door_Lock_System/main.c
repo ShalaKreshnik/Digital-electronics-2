@@ -166,10 +166,30 @@ ISR (TIMER0_OVF_vect)
 
 ISR(TIMER1_OVF_vect) // 1 second time delay
 {
-		
+    
+    if (countdown == -1 && countdown_2 == 3) // Countdown has been completed
+	{
+        uart_puts("Door is now closed"); // displaying at UART
+        uart_puts("\r\n");
+        uart_puts("Enter password again");
+        uart_puts("\r\n");
+    			
+        GPIO_write_low(&PORTC, 5); // Closing relay
+    			
+        // Clearing the LCD
+        lcd_gotoxy(0,0);
+        lcd_puts("                ");
+        lcd_gotoxy(0,1);
+        lcd_puts("                ");
+    			
+        // Displaying door closed message
+        lcd_gotoxy(1, 0);
+        lcd_puts("Door Closed");
+        countdown_2 = 2;
+	}
+    		
 	if (countdown_flag == 1 && countdown_2 == 3) // Correct password has been entered
 	{
-		
 		if (countdown == 9) // This will display it only one time on uart
 		{
 			uart_puts("You entered a Correct password");
@@ -182,38 +202,21 @@ ISR(TIMER1_OVF_vect) // 1 second time delay
 		lcd_putc(countdown+48); // Converting decimal value to character value (ASCII)
 		countdown--; // decrease in a second
 	}
-	if (countdown == -1 && countdown_2 == 3) // Countdown has been completed 
-	{
-		uart_puts("Door is now closed"); // displaying at UART
-		uart_puts("\r\n");
-		uart_puts("Enter password again");
-		uart_puts("\r\n");
-		
-		GPIO_write_low(&PORTC, 5); // Closing relay
-		
-		// Clearing the LCD
-		lcd_gotoxy(0,0);
-		lcd_puts("                ");
-		lcd_gotoxy(0,1);
-		lcd_puts("                ");
-		
-		// Displaying door closed message
-		lcd_gotoxy(1, 0);
-		lcd_puts("Door Closed");
-		countdown_2 = 2;
-	}
+
 	if (count < 4 && countdown_2 == 3) // Keys pressed are less than the total length of password
 	{
-		if (count > 0) // First key for password has been pressed
-		{
-			lcd_gotoxy(15,1); // Bottom right for seconds
-			lcd_putc(countdown_1+48); // Displaying its character value  
-			countdown_1--; //  Decrease in a second
-		}
+		
 		if (countdown_1 == -1) // Countdown completed
 		{
 			reset(); // Reset the display
 		}
+
+        if (count > 0) // First key for password has been pressed
+        {
+            lcd_gotoxy(15,1); // Bottom right for seconds
+            lcd_putc(countdown_1+48); // Displaying its character value
+            countdown_1--; //  Decrease in a second
+        }
 	}
 	if (countdown_2 < 3) // freezes the screen (acting as a delay)
 	{
