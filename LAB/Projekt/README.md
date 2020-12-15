@@ -118,7 +118,7 @@ ________________________________________________________________________________
 
 ![Running text](Images/Incorrect.gif)
 
-![Running text](Images/with_uart.gif)
+![Running text](Images/with-uart.gif)
 
 
 *Write your text here*
