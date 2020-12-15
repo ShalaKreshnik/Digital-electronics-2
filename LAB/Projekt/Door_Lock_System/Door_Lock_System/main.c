@@ -58,7 +58,10 @@ int main(void)
 	GPIO_config_output(&DDRD, 1);
 	GPIO_config_output(&DDRD, 2);	
 
-
+    GPIO_config_input_nopull(&DDRB, 2);
+    GPIO_config_input_nopull(&DDRB, 3);
+    GPIO_config_input_nopull(&DDRB, 4);
+    GPIO_config_input_nopull(&DDRB, 5);
 
 	// Timer 0 interrupt enabling
 	TIM0_overflow_4ms();
