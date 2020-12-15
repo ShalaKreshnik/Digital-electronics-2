@@ -114,9 +114,9 @@ ________________________________________________________________________________
 
 ## Video/Animation
 
-![Running text](Images/Welcome_Mr.Thomass.gif)
+![Running text](Images/Welcome_Mr.Thomas.gif)
 
-![Running text](Images/Incorrect.gif)
+![Running text](Images/Incorrect-min.gif)
 
 ![Running text](Images/with-uart.gif)
 
