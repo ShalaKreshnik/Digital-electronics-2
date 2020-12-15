@@ -3,7 +3,7 @@
 
 
 
-[GO TO readme file: ](readme.md) 
+# [GO TO "readme.md" file by clicking here: ](readme.md) 
 
 # Project: Smart Door Locking System
 ## Project objectives
