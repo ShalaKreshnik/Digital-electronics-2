@@ -86,7 +86,7 @@ ________________________________________________________________________________
 #### The functions in the keypad library:
 
 
-*	[void keypad()](Door_Lock_System/Door_Lock_System/keypad.c): The pressed keypad is scanned and stored in a char array variable.
+-	[void keypad()](Door_Lock_System/Door_Lock_System/keypad.c): The pressed keypad is scanned and stored in a char array variable.
 
 *	[void Check_password()](Door_Lock_System/Door_Lock_System/keypad.c): The entered password will be compared with the correct passcode
 
