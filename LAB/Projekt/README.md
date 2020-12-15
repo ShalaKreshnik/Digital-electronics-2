@@ -1,10 +1,5 @@
 ### Participants in the project: [Kreshnik Shala](https://github.com/ShalaKreshnik) and [Nadir Osman Al-Wattar](https://github.com/Nadir011995)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-[GO TO "readme.md" file by clicking here: ](readme.md) 
-
 # Project: Smart Door Locking System
 ## Project objectives
 
@@ -29,7 +24,8 @@ ________________________________________________________________________________
 * Door unlock relay
 * Bipolar transistor_1
 * Bipolar transistor_2
-* Resistor 1.2kOhm
+* Resistor 1.2 kOhm
+* Resistor 500 Ohm
 * Audio output (Speaker)
 * Display (Hd44780)
 * 12V Supply_1
@@ -91,7 +87,7 @@ ________________________________________________________________________________
 #### The functions in the keypad library:
 
 
--	[void keypad()](Door_Lock_System/Door_Lock_System/keypad.c): There are two for loops. The outer loop is for columns and the inner loop is for rows. The pressed key will         stored in a char array variable.
+*	[void keypad()](Door_Lock_System/Door_Lock_System/keypad.c): There are two for loops. The outer loop is for columns and the inner loop is for rows. The pressed key will                                                                      stored in a char array variable.
 
 *	[void Check_password()](Door_Lock_System/Door_Lock_System/keypad.c): The entered password will be compared with the correct passcode
 
@@ -101,16 +97,15 @@ ________________________________________________________________________________
 
 *	[void reset()](Door_Lock_System/Door_Lock_System/keypad.c): This function is for cleaning and resetting the display. The variables are set to their initial state. The audio is deactivated.
 
-*	[void entry_denied()](Door_Lock_System/Door_Lock_System/keypad.c): This function shows, the message “Wrong Password” on the display. This function operates when the entered passwords are incorrect. The audio is activated.
+*	[void entry_denied()](Door_Lock_System/Door_Lock_System/keypad.c): This function shows, the message “Wrong Password” on the display. This function will be called when the entered passwords are incorrect. The audio is activated.
 
-* [void entry_accepted()](Door_Lock_System/Door_Lock_System/keypad.c): If the entered password matches with the correct passcodes, this function will be operated. The message e.g “Welcome Mr. Thomas” is shown on the display. The relay will be activated. 
+* [void entry_accepted()](Door_Lock_System/Door_Lock_System/keypad.c): If the entered password matches with the correct passcodes, this function will be called. The message e.g “Welcome Mr. Thomas” is shown on the display. The relay will be activated. 
 
 #### The interrupt handlers in [main.c](Door_Lock_System/Door_Lock_System/main.c): 
 
 *	[TIMER0_OVF_vect](Door_Lock_System/Door_Lock_System/main.c): The TIM0 is enabled with a 4 millisecond overflow time. At the beginning in Interrupt Handler, there is the if statement with the condition timecheck> 100. This means that the data will be sent after 400 milliseconds via UART and to the LCD display.
 
-*	[TIMER1_OVF_vect](Door_Lock_System/Door_Lock_System/main.c):  The TIM1 is enabled with 1 second. There is also data sending via UART. This interrupt handler is created for delay. It counts down10 seconds for entering the password, 10 seconds with correct password, 1 second for "Wrong Password" is displayed and the buzzer is activated for 1 second too.
-
+*	[TIMER1_OVF_vect](Door_Lock_System/Door_Lock_System/main.c):  The TIM1 is enabled with 1 second. There is also data sending via UART. This interrupt handler is created for delay. It displays time (from 9 untill 0) and decreases it by 1 after every 1 second (the position of the timer is bottom right corner). When the time will reach 0 it will reset the whole system in both cases (Time limit for entering the password, and time limit in which the door is opened). The string “Wrong Password" will hold on the display for 1 second. The audio is also activated for second . "Door Closed" will display for 3 seconds
 
 
 
