@@ -97,6 +97,10 @@ ________________________________________________________________________________
 
 ![Running text](Images/Welcome_Mr.Thomass.gif)
 
+![Running text](Images/Incorrect.gif)
+
+![Running text](with_uart.gif)
+
 
 *Write your text here*
 
