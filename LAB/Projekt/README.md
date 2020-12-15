@@ -80,11 +80,11 @@ ________________________________________________________________________________
 
 * [Keypad.h](Keypad.h)
 * [Keypad.c](Keypad.c)
-* [main.c](main.c)
 
 
 
 #### The functions in the keypad library:
+
 
 *	[void keypad()](Door_Lock_System/Door_Lock_System/keypad.c): The pressed keypad is scanned and stored in a char array variable.
 
@@ -100,7 +100,7 @@ ________________________________________________________________________________
 
 * [void entry_accepted()](Door_Lock_System/Door_Lock_System/keypad.c): If the entered password matches with the correct passcodes, this function will be operated. The message e.g “Welcome Mr. Thomas” is shown on the display. The relay will be activated. 
 
-#### The interrupt handlers in main.c: 
+#### The interrupt handlers in [main.c](main.c): 
 
 *	[TIMER0_OVF_vect](Door_Lock_System/Door_Lock_System/main.c): The TIM0 is enabled with a 4 millisecond overflow time. At the beginning in Interrupt Handler, there is the if statement with the condition timecheck> 100. This means that the data will be sent after 400 milliseconds via UART and to the LCD display.
 
