@@ -61,7 +61,7 @@ ________________________________________________________________________________
 
 ## Code description and simulations
 
-#### Updated Circuit: ![SimulIDE](Images/ON.png)
+#### Simulation: ![SimulIDE](Images/ON.png)
 
 #### Libraries from previous labs:
 
