@@ -36,7 +36,7 @@ ________________________________________________________________________________
 * Concept presentation [Circuit_1](Images/Completed_circuit.png)
  
 
-#### Updated Circuit: ![SimulIDE](Images/Updated_Circuit.png)
+#### Updated Circuit: ![SimulIDE](Images/OFF.png)
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
@@ -61,7 +61,7 @@ ________________________________________________________________________________
 
 ## Code description and simulations
 
-
+#### Updated Circuit: ![SimulIDE](Images/ON.png)
 
 #### Libraries from previous labs:
 
