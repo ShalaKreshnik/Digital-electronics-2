@@ -114,9 +114,15 @@ ________________________________________________________________________________
 
 ## Video/Animation
 
+*Write your text here*
+
 ![Running text](Images/Welcome_Mr.Thomas.gif)
 
+*Write your text here*
+
 ![Running text](Images/Incorrect-min.gif)
+
+*Write your text here*
 
 ![Running text](Images/with-uart.gif)
 
