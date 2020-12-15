@@ -114,7 +114,7 @@ ________________________________________________________________________________
 
 ## Video/Animation
 
-* -1) If the correct password "1234" is entered:
+* -1) If the correct password "2345" is entered:
 
 ![Running text](Images/Welcome_Mr.Thomas.gif)
 
