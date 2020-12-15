@@ -134,3 +134,6 @@ ________________________________________________________________________________
 2.  [What is a Relay? How does a Relay works?](https://www.youtube.com/watch?v=1_YfuH_AcxQ)
 3.  [How to connect the relay and transistor with microcontroller](http://electronicsdrive.blogspot.com/2015/03/how-to-calculate-base-resistance.html)
 4.  [ATmega32 + LCD + Keypad Interface](https://extremeelectronics.co.in/avr-tutorials/4x3-matrix-keypad-interface-avr-tutorial/)
+5.  [Example of keypad.h which can give us an overview](https://playground.arduino.cc/Code/Keypad/)
+6.  [Transistor audio connection](https://theorycircuit.com/simple-single-transistor-audio-amplifier-circuit/)
+7.  [ASCII](http://www.asciitable.com/)
