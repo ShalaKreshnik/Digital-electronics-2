@@ -64,20 +64,14 @@ ________________________________________________________________________________
 
 
 #### Libraries from previous labs:
-* [gpio.c](Previous_Labs_Libraries/gpio.c)
- 
-* [gpio.h](Previous_Labs_Libraries/gpio.h)
- 
-* [lcd.c](Previous_Labs_Libraries/lcd.c)
- 
+
+* [gpio.c](Previous_Labs_Libraries/gpio.c) 
+* [gpio.h](Previous_Labs_Libraries/gpio.h) 
+* [lcd.c](Previous_Labs_Libraries/lcd.c) 
 * [lcd.h](Previous_Labs_Libraries/lcd.h)
-
 * [lcd_definitons.h](Previous_Labs_Libraries/lcd_definitons.h)
-
 * [timer.h](Previous_Labs_Libraries/timer.h)
-
 * [uart.c](Previous_Labs_Libraries/uart.c)
- 
 * [uart.h](Previous_Labs_Libraries/uart.h)
 
 
@@ -85,9 +79,7 @@ ________________________________________________________________________________
 #### Own librarys for keypad scanning:
 
 * [Keypad.h](Keypad.h)
-
 * [Keypad.c](Keypad.c)
-
 * [main.c](main.c)
 
 
@@ -95,17 +87,24 @@ ________________________________________________________________________________
 #### The functions in the keypad library:
 
 *	[void keypad()](Door_Lock_System/Door_Lock_System/keypad.c): The pressed keypad is scanned and stored in a char array variable.
-*	[void Check_password()](Keypad.c): The entered password will be compared with the correct passcode
-*	[void Check_password_1()](Keypad.c): The same implementation as the previous function. Here we will compare the second correct passcode. 
-*	[void Check_password_2()](Keypad.c): The same implementation as the previous function. Here we will compare the second correct passcode. 
-*	[void reset()](): This function is for cleaning and resetting the display. The variables are set to their initial state. The audio is deactivated.
-*	[void entry_denied()](Keypad.c): This function shows, the message “Wrong Password” on the display. This function operates when the entered passwords are incorrect. The audio is activated.
-* [void entry_accepted()](Keypad.c): If the entered password matches with the correct passcodes, this function will be operated. The message e.g “Welcome Mr. Thomas” is shown on the display. The relay will be activated. 
+
+*	[void Check_password()](Door_Lock_System/Door_Lock_System/keypad.c): The entered password will be compared with the correct passcode
+
+*	[void Check_password_1()](Door_Lock_System/Door_Lock_System/keypad.c): The same implementation as the previous function. Here we will compare the second correct passcode.
+
+*	[void Check_password_2()](Door_Lock_System/Door_Lock_System/keypad.c): The same implementation as the previous function. Here we will compare the second correct passcode. 
+
+*	[void reset()](Door_Lock_System/Door_Lock_System/keypad.c): This function is for cleaning and resetting the display. The variables are set to their initial state. The audio is deactivated.
+
+*	[void entry_denied()](Door_Lock_System/Door_Lock_System/keypad.c): This function shows, the message “Wrong Password” on the display. This function operates when the entered passwords are incorrect. The audio is activated.
+
+* [void entry_accepted()](Door_Lock_System/Door_Lock_System/keypad.c): If the entered password matches with the correct passcodes, this function will be operated. The message e.g “Welcome Mr. Thomas” is shown on the display. The relay will be activated. 
 
 #### The interrupt handlers in main.c: 
 
-*	[TIMER0_OVF_vect](main.c): The TIM0 is enabled with a 4 millisecond overflow time. At the beginning in Interrupt Handler, there is the if statement with the condition timecheck> 100. This means that the data will be sent after 400 milliseconds via UART and to the LCD display.
-*	[TIMER1_OVF_vect](main.c):  The TIM1 is enabled with 1 second. There is also data sending via UART. This interrupt handler is created for delay. It counts down10 seconds for entering the password, 10 seconds with correct password, 1 second for "Wrong Password" is displayed and the buzzer is activated for 1 second too.
+*	[TIMER0_OVF_vect](Door_Lock_System/Door_Lock_System/main.c): The TIM0 is enabled with a 4 millisecond overflow time. At the beginning in Interrupt Handler, there is the if statement with the condition timecheck> 100. This means that the data will be sent after 400 milliseconds via UART and to the LCD display.
+
+*	[TIMER1_OVF_vect](Door_Lock_System/Door_Lock_System/main.c):  The TIM1 is enabled with 1 second. There is also data sending via UART. This interrupt handler is created for delay. It counts down10 seconds for entering the password, 10 seconds with correct password, 1 second for "Wrong Password" is displayed and the buzzer is activated for 1 second too.
 
 
 
