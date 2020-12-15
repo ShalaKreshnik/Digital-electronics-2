@@ -114,15 +114,15 @@ ________________________________________________________________________________
 
 ## Video/Animation
 
-*Write your text here*
+* 1) If the correct password "1234" is entered:
 
 ![Running text](Images/Welcome_Mr. Thomas.gif)
 
-*Write your text here*
+* 2) If the wrong password is entered:
 
 ![Running text](Images/Incorrect.gif)
 
-*Write your text here*
+* 3) Displaying the data via UART with correctly entered passwords and incorrectly entered passwords:
 
 ![Running text](Images/with_uart.gif)
 
